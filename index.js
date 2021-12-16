@@ -1,7 +1,7 @@
 const RPC = require("discord-rpc");
 const fs = require("fs")
 const client = new RPC.Client({transport: "ipc"});
-const date = new Date(new Date().getFullYear(), 1, 1, 0, 0, 0, 0).getTime()
+const date = new Date(2003, 1, 1, 0, 0, 0, 0).getTime()
 
 const activity = {
     details : "SAG BOT",
