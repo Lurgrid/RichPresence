@@ -1,6 +1,7 @@
 const RPC = require("discord-rpc");
+const fs = require("fs")
 const client = new RPC.Client({transport: "ipc"});
-const date = new Date(8600);
+const date = new Date(new Date().getFullYear(), 1, 1, 0, 0, 0, 0).getTime()
 
 const activity = {
     details : "SAG BOT",
@@ -18,7 +19,7 @@ const activity = {
             "url": "http://www.sagbot.xyz"
         }
     ],
-    timestamps: {start: date.getTime()},
+    timestamps: {start: date},
     instance: true
 };
 
